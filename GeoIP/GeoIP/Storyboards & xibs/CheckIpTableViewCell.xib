@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="177" id="miS-EU-A8u" customClass="CheckIpTableViewCell" customModule="GeoIP" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="413" height="177"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="miS-EU-A8u" id="iIW-aQ-nvO">
+                <rect key="frame" x="0.0" y="0.0" width="413" height="177"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Virginia" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Yk-ld-lVb">
+                        <rect key="frame" x="135" y="10" width="51.5" height="157"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Region Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMR-sB-y8i">
+                        <rect key="frame" x="10" y="10" width="110" height="157"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="110" id="9RG-ic-EIE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="uMR-sB-y8i" firstAttribute="top" secondItem="iIW-aQ-nvO" secondAttribute="top" constant="10" id="1xG-vM-V4A"/>
+                    <constraint firstAttribute="bottom" secondItem="7Yk-ld-lVb" secondAttribute="bottom" constant="10" id="QJm-mK-6xg"/>
+                    <constraint firstItem="7Yk-ld-lVb" firstAttribute="leading" secondItem="uMR-sB-y8i" secondAttribute="trailing" constant="15" id="eCy-PO-cdr"/>
+                    <constraint firstAttribute="bottom" secondItem="uMR-sB-y8i" secondAttribute="bottom" constant="10" id="poX-tB-7Ar"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="7Yk-ld-lVb" secondAttribute="trailing" constant="10" id="qU3-ft-3NX"/>
+                    <constraint firstItem="uMR-sB-y8i" firstAttribute="leading" secondItem="iIW-aQ-nvO" secondAttribute="leading" constant="10" id="svI-iC-gjM"/>
+                    <constraint firstItem="7Yk-ld-lVb" firstAttribute="top" secondItem="iIW-aQ-nvO" secondAttribute="top" constant="10" id="zT7-Q1-Eqr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="id" destination="uMR-sB-y8i" id="oZl-Nc-ltX"/>
+                <outlet property="title" destination="7Yk-ld-lVb" id="g4B-le-4uA"/>
+            </connections>
+            <point key="canvasLocation" x="-936.95652173913049" y="-43.191964285714285"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,693 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		85D85F5A257E39510015F35E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D85F59257E39510015F35E /* AppDelegate.swift */; };
+		85D85F5E257E39510015F35E /* CheckIpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D85F5D257E39510015F35E /* CheckIpViewController.swift */; };
+		85D85F61257E39510015F35E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85D85F5F257E39510015F35E /* Main.storyboard */; };
+		85D85F63257E39530015F35E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85D85F62257E39530015F35E /* Assets.xcassets */; };
+		85D85F66257E39530015F35E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85D85F64257E39530015F35E /* LaunchScreen.storyboard */; };
+		85D85F71257E39530015F35E /* GeoIPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D85F70257E39530015F35E /* GeoIPTests.swift */; };
+		85D85FA3257E3A620015F35E /* CheckIpProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D85FA2257E3A620015F35E /* CheckIpProtocols.swift */; };
+		85D85FA7257E3A890015F35E /* CheckIpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D85FA6257E3A890015F35E /* CheckIpModel.swift */; };
+		85D85FAB257E3A940015F35E /* CheckIpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D85FAA257E3A940015F35E /* CheckIpInteractor.swift */; };
+		85D85FAF257E3AA20015F35E /* CheckIpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D85FAE257E3AA20015F35E /* CheckIpRouter.swift */; };
+		85D85FB3257E3AB10015F35E /* CheckIpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D85FB2257E3AB10015F35E /* CheckIpPresenter.swift */; };
+		85D85FD4257E48F70015F35E /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D85FD3257E48F70015F35E /* ApiService.swift */; };
+		85D85FDD257E49280015F35E /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D85FDC257E49280015F35E /* Reachability.swift */; };
+		85D85FEA257E4BA90015F35E /* InputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D85FE9257E4BA90015F35E /* InputValidator.swift */; };
+		85D85FEE257E4FC00015F35E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D85FED257E4FC00015F35E /* Constants.swift */; };
+		85D85FF2257E5ADD0015F35E /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D85FF1257E5ADD0015F35E /* Reusable.swift */; };
+		85D85FF6257E60190015F35E /* CheckIpTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85D85FF5257E60190015F35E /* CheckIpTableViewCell.xib */; };
+		CB7FC0CF10280B35D02A1773 /* Pods_GeoIP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9694EC6EAD6AEDC68216F476 /* Pods_GeoIP.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		85D85F6D257E39530015F35E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85D85F4E257E39510015F35E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85D85F55257E39510015F35E;
+			remoteInfo = GeoIP;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		84B0F041CFD820359EC55A62 /* Pods-GeoIP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoIP.debug.xcconfig"; path = "Target Support Files/Pods-GeoIP/Pods-GeoIP.debug.xcconfig"; sourceTree = "<group>"; };
+		85D85F56257E39510015F35E /* GeoIP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoIP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		85D85F59257E39510015F35E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		85D85F5D257E39510015F35E /* CheckIpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckIpViewController.swift; sourceTree = "<group>"; };
+		85D85F60257E39510015F35E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		85D85F62257E39530015F35E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		85D85F65257E39530015F35E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		85D85F67257E39530015F35E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85D85F6C257E39530015F35E /* GeoIPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoIPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		85D85F70257E39530015F35E /* GeoIPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoIPTests.swift; sourceTree = "<group>"; };
+		85D85F72257E39530015F35E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85D85FA2257E3A620015F35E /* CheckIpProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckIpProtocols.swift; sourceTree = "<group>"; };
+		85D85FA6257E3A890015F35E /* CheckIpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckIpModel.swift; sourceTree = "<group>"; };
+		85D85FAA257E3A940015F35E /* CheckIpInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckIpInteractor.swift; sourceTree = "<group>"; };
+		85D85FAE257E3AA20015F35E /* CheckIpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckIpRouter.swift; sourceTree = "<group>"; };
+		85D85FB2257E3AB10015F35E /* CheckIpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckIpPresenter.swift; sourceTree = "<group>"; };
+		85D85FD3257E48F70015F35E /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		85D85FDC257E49280015F35E /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		85D85FE9257E4BA90015F35E /* InputValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputValidator.swift; sourceTree = "<group>"; };
+		85D85FED257E4FC00015F35E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		85D85FF1257E5ADD0015F35E /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		85D85FF5257E60190015F35E /* CheckIpTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckIpTableViewCell.xib; sourceTree = "<group>"; };
+		9694EC6EAD6AEDC68216F476 /* Pods_GeoIP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoIP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBB067EE7FA575B37C5F1AF5 /* Pods-GeoIP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoIP.release.xcconfig"; path = "Target Support Files/Pods-GeoIP/Pods-GeoIP.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		85D85F53257E39510015F35E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB7FC0CF10280B35D02A1773 /* Pods_GeoIP.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85D85F69257E39530015F35E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		85D85F4D257E39510015F35E = {
+			isa = PBXGroup;
+			children = (
+				85D85F58257E39510015F35E /* GeoIP */,
+				85D85F6F257E39530015F35E /* GeoIPTests */,
+				85D85F57257E39510015F35E /* Products */,
+				EEBA9685203FE904CA559415 /* Pods */,
+				9B37165ADEDEB55A88B1A1A6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		85D85F57257E39510015F35E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85D85F56257E39510015F35E /* GeoIP.app */,
+				85D85F6C257E39530015F35E /* GeoIPTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		85D85F58257E39510015F35E /* GeoIP */ = {
+			isa = PBXGroup;
+			children = (
+				85D85F96257E39B20015F35E /* Common */,
+				85D85F99257E39BD0015F35E /* Modules */,
+				85D85F94257E399A0015F35E /* Storyboards & xibs */,
+				85D85F95257E39A90015F35E /* Resources */,
+				85D85F91257E39790015F35E /* Settings */,
+				85D85FD7257E48FC0015F35E /* Utils */,
+			);
+			path = GeoIP;
+			sourceTree = "<group>";
+		};
+		85D85F6F257E39530015F35E /* GeoIPTests */ = {
+			isa = PBXGroup;
+			children = (
+				85D85F70257E39530015F35E /* GeoIPTests.swift */,
+				85D85F72257E39530015F35E /* Info.plist */,
+			);
+			path = GeoIPTests;
+			sourceTree = "<group>";
+		};
+		85D85F91257E39790015F35E /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				85D85F67257E39530015F35E /* Info.plist */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		85D85F94257E399A0015F35E /* Storyboards & xibs */ = {
+			isa = PBXGroup;
+			children = (
+				85D85F5F257E39510015F35E /* Main.storyboard */,
+				85D85F64257E39530015F35E /* LaunchScreen.storyboard */,
+				85D85FF5257E60190015F35E /* CheckIpTableViewCell.xib */,
+			);
+			path = "Storyboards & xibs";
+			sourceTree = "<group>";
+		};
+		85D85F95257E39A90015F35E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				85D85F62257E39530015F35E /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		85D85F96257E39B20015F35E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				85D85F59257E39510015F35E /* AppDelegate.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		85D85F99257E39BD0015F35E /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				85D85F9C257E3A110015F35E /* CheckIp */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		85D85F9C257E3A110015F35E /* CheckIp */ = {
+			isa = PBXGroup;
+			children = (
+				85D85FB6257E3AB80015F35E /* Protocols */,
+				85D85F9F257E3A1F0015F35E /* View */,
+				85D85FBC257E3AC90015F35E /* Interactor */,
+				85D85FC2257E3AEC0015F35E /* Presenter */,
+				85D85FB9257E3AC20015F35E /* Entity */,
+				85D85FBF257E3AD10015F35E /* Router */,
+			);
+			path = CheckIp;
+			sourceTree = "<group>";
+		};
+		85D85F9F257E3A1F0015F35E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				85D85F5D257E39510015F35E /* CheckIpViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		85D85FB6257E3AB80015F35E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				85D85FA2257E3A620015F35E /* CheckIpProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		85D85FB9257E3AC20015F35E /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				85D85FA6257E3A890015F35E /* CheckIpModel.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		85D85FBC257E3AC90015F35E /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				85D85FAA257E3A940015F35E /* CheckIpInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		85D85FBF257E3AD10015F35E /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				85D85FAE257E3AA20015F35E /* CheckIpRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		85D85FC2257E3AEC0015F35E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				85D85FB2257E3AB10015F35E /* CheckIpPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		85D85FD7257E48FC0015F35E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				85D85FD3257E48F70015F35E /* ApiService.swift */,
+				85D85FDC257E49280015F35E /* Reachability.swift */,
+				85D85FE9257E4BA90015F35E /* InputValidator.swift */,
+				85D85FED257E4FC00015F35E /* Constants.swift */,
+				85D85FF1257E5ADD0015F35E /* Reusable.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		9B37165ADEDEB55A88B1A1A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9694EC6EAD6AEDC68216F476 /* Pods_GeoIP.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EEBA9685203FE904CA559415 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				84B0F041CFD820359EC55A62 /* Pods-GeoIP.debug.xcconfig */,
+				CBB067EE7FA575B37C5F1AF5 /* Pods-GeoIP.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		85D85F55257E39510015F35E /* GeoIP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85D85F80257E39530015F35E /* Build configuration list for PBXNativeTarget "GeoIP" */;
+			buildPhases = (
+				A9B305840A9CC60E42410A18 /* [CP] Check Pods Manifest.lock */,
+				85D85F52257E39510015F35E /* Sources */,
+				85D85F53257E39510015F35E /* Frameworks */,
+				85D85F54257E39510015F35E /* Resources */,
+				6AA721A847C18981FEC83EC6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeoIP;
+			productName = GeoIP;
+			productReference = 85D85F56257E39510015F35E /* GeoIP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		85D85F6B257E39530015F35E /* GeoIPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85D85F83257E39530015F35E /* Build configuration list for PBXNativeTarget "GeoIPTests" */;
+			buildPhases = (
+				85D85F68257E39530015F35E /* Sources */,
+				85D85F69257E39530015F35E /* Frameworks */,
+				85D85F6A257E39530015F35E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85D85F6E257E39530015F35E /* PBXTargetDependency */,
+			);
+			name = GeoIPTests;
+			productName = GeoIPTests;
+			productReference = 85D85F6C257E39530015F35E /* GeoIPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		85D85F4E257E39510015F35E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					85D85F55257E39510015F35E = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					85D85F6B257E39530015F35E = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 85D85F55257E39510015F35E;
+					};
+				};
+			};
+			buildConfigurationList = 85D85F51257E39510015F35E /* Build configuration list for PBXProject "GeoIP" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 85D85F4D257E39510015F35E;
+			productRefGroup = 85D85F57257E39510015F35E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				85D85F55257E39510015F35E /* GeoIP */,
+				85D85F6B257E39530015F35E /* GeoIPTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		85D85F54257E39510015F35E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85D85F66257E39530015F35E /* LaunchScreen.storyboard in Resources */,
+				85D85F63257E39530015F35E /* Assets.xcassets in Resources */,
+				85D85F61257E39510015F35E /* Main.storyboard in Resources */,
+				85D85FF6257E60190015F35E /* CheckIpTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85D85F6A257E39530015F35E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6AA721A847C18981FEC83EC6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GeoIP/Pods-GeoIP-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GeoIP/Pods-GeoIP-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GeoIP/Pods-GeoIP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9B305840A9CC60E42410A18 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GeoIP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		85D85F52257E39510015F35E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85D85FB3257E3AB10015F35E /* CheckIpPresenter.swift in Sources */,
+				85D85FAF257E3AA20015F35E /* CheckIpRouter.swift in Sources */,
+				85D85F5E257E39510015F35E /* CheckIpViewController.swift in Sources */,
+				85D85FA3257E3A620015F35E /* CheckIpProtocols.swift in Sources */,
+				85D85F5A257E39510015F35E /* AppDelegate.swift in Sources */,
+				85D85FD4257E48F70015F35E /* ApiService.swift in Sources */,
+				85D85FF2257E5ADD0015F35E /* Reusable.swift in Sources */,
+				85D85FA7257E3A890015F35E /* CheckIpModel.swift in Sources */,
+				85D85FAB257E3A940015F35E /* CheckIpInteractor.swift in Sources */,
+				85D85FDD257E49280015F35E /* Reachability.swift in Sources */,
+				85D85FEA257E4BA90015F35E /* InputValidator.swift in Sources */,
+				85D85FEE257E4FC00015F35E /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85D85F68257E39530015F35E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85D85F71257E39530015F35E /* GeoIPTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		85D85F6E257E39530015F35E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85D85F55257E39510015F35E /* GeoIP */;
+			targetProxy = 85D85F6D257E39530015F35E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		85D85F5F257E39510015F35E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85D85F60257E39510015F35E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		85D85F64257E39530015F35E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85D85F65257E39530015F35E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		85D85F7E257E39530015F35E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		85D85F7F257E39530015F35E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		85D85F81257E39530015F35E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84B0F041CFD820359EC55A62 /* Pods-GeoIP.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LAH29MAHC7;
+				INFOPLIST_FILE = GeoIP/Settings/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.serhiiborysov.GeoIP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		85D85F82257E39530015F35E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBB067EE7FA575B37C5F1AF5 /* Pods-GeoIP.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LAH29MAHC7;
+				INFOPLIST_FILE = GeoIP/Settings/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.serhiiborysov.GeoIP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		85D85F84257E39530015F35E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LAH29MAHC7;
+				INFOPLIST_FILE = GeoIPTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.serhiiborysov.GeoIPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeoIP.app/GeoIP";
+			};
+			name = Debug;
+		};
+		85D85F85257E39530015F35E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LAH29MAHC7;
+				INFOPLIST_FILE = GeoIPTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.serhiiborysov.GeoIPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeoIP.app/GeoIP";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		85D85F51257E39510015F35E /* Build configuration list for PBXProject "GeoIP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85D85F7E257E39530015F35E /* Debug */,
+				85D85F7F257E39530015F35E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85D85F80257E39530015F35E /* Build configuration list for PBXNativeTarget "GeoIP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85D85F81257E39530015F35E /* Debug */,
+				85D85F82257E39530015F35E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85D85F83257E39530015F35E /* Build configuration list for PBXNativeTarget "GeoIPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85D85F84257E39530015F35E /* Debug */,
+				85D85F85257E39530015F35E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 85D85F4E257E39510015F35E /* Project object */;
+}
