@@ -18,6 +18,7 @@ class CheckIpInteractor: PresenterToInteractorProtocol {
         
         if !isValidQuery {
             self.presenter?.ipDetailsFetchFailed(errorMessage: "Input query is not an IP address")
+            return
         }
         
         self.apiService.delegate = self
