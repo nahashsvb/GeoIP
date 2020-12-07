@@ -54,15 +54,13 @@ class ApiService {
     
     func fetchIpDetails(query: String)  {
         if !Reachability.isConnectedToNetwork() {
-            self.error = .noInternet
-            self.delegate?.didFinishWithError(self.error?.errorMessage() ?? "Unknown Error")
+            self.handleError(errorType: .noInternet, errorMessage: nil);
             return
         }
 
         let fetchURL = String(format: "%@%@", API_CHECK_IP, query)
         guard let sourcesURL = URL(string: fetchURL) else {
-            self.error = .invalidQuery
-            self.delegate?.didFinishWithError(self.error?.errorMessage() ?? "Unknown Error")
+            self.handleError(errorType: .invalidQuery, errorMessage: nil);
             return
         }
         
@@ -76,10 +74,7 @@ class ApiService {
                     
                     if let status = ipDetails?.status, let details = ipDetails {
                         if status == "fail" {
-                            self?.error = .apiError
-                            DispatchQueue.main.async {  [weak self] in
-                                self?.delegate?.didFinishWithError(self?.error?.errorMessage(apiError: details.errorMessage) ?? "Unknown Error")
-                            }
+                            self?.handleError(errorType: .apiError, errorMessage: details.errorMessage);
                         }
                         else {
                             DispatchQueue.main.async {  [weak self] in
@@ -88,14 +83,20 @@ class ApiService {
                         }
                     }
                 }
-                catch let parseError {
-                    print(parseError.localizedDescription)
-                    self?.error = .unknownError
-                    DispatchQueue.main.async {  [weak self] in
-                        self?.delegate?.didFinishWithError(self?.error?.errorMessage() ?? "Unknown Error")
-                    }
+                catch {
+                    self?.handleError(errorType: .unknownError, errorMessage: nil);
                 }
             }
+            else {
+                self?.handleError(errorType: .unknownError, errorMessage: nil);
+            }
+        }
+    }
+    
+    private func handleError(errorType: ApiError, errorMessage: String?) {
+        self.error = errorType
+        DispatchQueue.main.async {  [weak self] in
+            self?.delegate?.didFinishWithError(self?.error?.errorMessage(apiError: errorMessage) ?? "Unknown Error")
         }
     }
 }
