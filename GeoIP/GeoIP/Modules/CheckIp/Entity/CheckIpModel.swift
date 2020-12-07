@@ -60,7 +60,7 @@ class CheckIpModel: Mappable {
         array.append(["City:" : city ?? "N/A"])
         
         if let lattitude = lat {
-            array.append(["Lon:" : String(lattitude)])
+            array.append(["Lat:" : String(lattitude)])
         }
         
         if let longitude = lon {
