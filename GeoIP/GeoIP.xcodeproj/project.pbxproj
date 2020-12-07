@@ -13,7 +13,7 @@
 		85D50631257E8AA90078F2D6 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D85FDC257E49280015F35E /* Reachability.swift */; };
 		85D50632257E8AA90078F2D6 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D85FF1257E5ADD0015F35E /* Reusable.swift */; };
 		85D50633257E8AA90078F2D6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D85FED257E4FC00015F35E /* Constants.swift */; };
-		85D50634257E8AA90078F2D6 /* InputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D85FE9257E4BA90015F35E /* InputValidator.swift */; };
+		85D50634257E8AA90078F2D6 /* InputIpValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D85FE9257E4BA90015F35E /* InputIpValidator.swift */; };
 		85D50637257E8AB00078F2D6 /* CheckIpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D85F5D257E39510015F35E /* CheckIpViewController.swift */; };
 		85D50638257E8AB00078F2D6 /* CheckIpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D85FB2257E3AB10015F35E /* CheckIpPresenter.swift */; };
 		85D50639257E8AB00078F2D6 /* CheckIpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D85FA6257E3A890015F35E /* CheckIpModel.swift */; };
@@ -31,7 +31,7 @@
 		85D85FB3257E3AB10015F35E /* CheckIpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D85FB2257E3AB10015F35E /* CheckIpPresenter.swift */; };
 		85D85FD4257E48F70015F35E /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D85FD3257E48F70015F35E /* ApiService.swift */; };
 		85D85FDD257E49280015F35E /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D85FDC257E49280015F35E /* Reachability.swift */; };
-		85D85FEA257E4BA90015F35E /* InputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D85FE9257E4BA90015F35E /* InputValidator.swift */; };
+		85D85FEA257E4BA90015F35E /* InputIpValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D85FE9257E4BA90015F35E /* InputIpValidator.swift */; };
 		85D85FEE257E4FC00015F35E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D85FED257E4FC00015F35E /* Constants.swift */; };
 		85D85FF2257E5ADD0015F35E /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D85FF1257E5ADD0015F35E /* Reusable.swift */; };
 		85D85FF6257E60190015F35E /* CheckIpTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85D85FF5257E60190015F35E /* CheckIpTableViewCell.xib */; };
@@ -70,7 +70,7 @@
 		85D85FB2257E3AB10015F35E /* CheckIpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckIpPresenter.swift; sourceTree = "<group>"; };
 		85D85FD3257E48F70015F35E /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		85D85FDC257E49280015F35E /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
-		85D85FE9257E4BA90015F35E /* InputValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputValidator.swift; sourceTree = "<group>"; };
+		85D85FE9257E4BA90015F35E /* InputIpValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputIpValidator.swift; sourceTree = "<group>"; };
 		85D85FED257E4FC00015F35E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		85D85FF1257E5ADD0015F35E /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		85D85FF5257E60190015F35E /* CheckIpTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckIpTableViewCell.xib; sourceTree = "<group>"; };
@@ -249,7 +249,7 @@
 			children = (
 				85D85FD3257E48F70015F35E /* ApiService.swift */,
 				85D85FDC257E49280015F35E /* Reachability.swift */,
-				85D85FE9257E4BA90015F35E /* InputValidator.swift */,
+				85D85FE9257E4BA90015F35E /* InputIpValidator.swift */,
 				85D85FED257E4FC00015F35E /* Constants.swift */,
 				85D85FF1257E5ADD0015F35E /* Reusable.swift */,
 			);
@@ -472,7 +472,7 @@
 				85D85FA7257E3A890015F35E /* CheckIpModel.swift in Sources */,
 				85D85FAB257E3A940015F35E /* CheckIpInteractor.swift in Sources */,
 				85D85FDD257E49280015F35E /* Reachability.swift in Sources */,
-				85D85FEA257E4BA90015F35E /* InputValidator.swift in Sources */,
+				85D85FEA257E4BA90015F35E /* InputIpValidator.swift in Sources */,
 				85D85FEE257E4FC00015F35E /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -490,7 +490,7 @@
 				85D50630257E8AA90078F2D6 /* ApiService.swift in Sources */,
 				85D5063A257E8AB00078F2D6 /* CheckIpRouter.swift in Sources */,
 				85D50633257E8AA90078F2D6 /* Constants.swift in Sources */,
-				85D50634257E8AA90078F2D6 /* InputValidator.swift in Sources */,
+				85D50634257E8AA90078F2D6 /* InputIpValidator.swift in Sources */,
 				85D50637257E8AB00078F2D6 /* CheckIpViewController.swift in Sources */,
 				85D50631257E8AA90078F2D6 /* Reachability.swift in Sources */,
 			);

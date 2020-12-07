@@ -14,7 +14,7 @@ class CheckIpInteractor: PresenterToInteractorProtocol {
     var presenter: InteractorToPresenterProtocol?
     
     func fetchIpDetails(query: String) -> Bool {
-        let isValidQuery = InputValidator.isValid(value: query)
+        let isValidQuery = InputIpValidator.isValid(value: query)
         
         if !isValidQuery {
             self.presenter?.ipDetailsFetchFailed(errorMessage: "Input query is not an IP address")

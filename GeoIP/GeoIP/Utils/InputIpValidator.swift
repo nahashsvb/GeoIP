@@ -11,7 +11,7 @@ protocol InputValidatorProtocol: class {
     static func isValid(value: String) -> Bool
 }
 
-public class InputValidator: InputValidatorProtocol {
+public class InputIpValidator: InputValidatorProtocol {
     
     public static func isValid(value: String) -> Bool {
         return isIP(value: value)
@@ -47,7 +47,7 @@ public class InputValidator: InputValidatorProtocol {
         // and '::a.b.c.d' is deprecated, but also valid.
         
         let lastBlock = blocks[blocks.count - 1]
-        let foundIPv4TransitionBlock = (blocks.count > 0 ? InputValidator.isIPv4(value: lastBlock) : false)
+        let foundIPv4TransitionBlock = (blocks.count > 0 ? InputIpValidator.isIPv4(value: lastBlock) : false)
         let expectedNumberOfBlocks = (foundIPv4TransitionBlock ? 7 : 8)
         
         if (blocks.count > expectedNumberOfBlocks) {
