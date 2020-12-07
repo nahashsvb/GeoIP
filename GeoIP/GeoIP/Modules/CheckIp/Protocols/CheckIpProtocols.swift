@@ -29,10 +29,12 @@ protocol PresenterToRouterProtocol: class {
 
 protocol PresenterToInteractorProtocol: class {
     var presenter:InteractorToPresenterProtocol? {get set}
-    func fetchIpDetails(query: String)
+    func fetchIpDetails(query: String) -> Bool
 }
 
 protocol InteractorToPresenterProtocol: class {
     func ipDetailsFetchedSuccess(model: CheckIpModel)
     func ipDetailsFetchFailed(errorMessage: String)
+    func showLoadingIndicator()
+    func hideLoadingIndicator()
 }

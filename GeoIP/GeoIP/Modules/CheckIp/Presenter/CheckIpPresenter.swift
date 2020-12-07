@@ -17,7 +17,7 @@ class CheckIpPresenter:ViewToPresenterProtocol {
     var router: PresenterToRouterProtocol?
     
     func startFetchingIpDetails(query: String) {
-        interactor?.fetchIpDetails(query: query)
+        _ = interactor?.fetchIpDetails(query: query)
     }
 }
 

@@ -30,8 +30,6 @@ class CheckIpViewController: UIViewController {
         self.tableView.register(cellNib, forCellReuseIdentifier: CheckIpTableViewCell.reuseIdentifier())
         
         self.setupSearchController()
-        
-        presentor?.startFetchingIpDetails(query: "8.8.8.8888")
     }
     
     func setupSearchController() {
