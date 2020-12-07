@@ -8,5 +8,5 @@ target 'GeoIP' do
   # Pods for GeoIP
   pod 'Alamofire'
   pod 'AlamofireObjectMapper'
-
+  pod 'SwiftLint'
 end
