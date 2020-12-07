@@ -11,7 +11,7 @@ protocol InputValidatorProtocol: class {
     static func isValid(value: String) -> Bool
 }
 
-public class InputValidator {
+public class InputValidator: InputValidatorProtocol {
     
     public static func isValid(value: String) -> Bool {
         return isIP(value: value)
